@@ -1,0 +1,165 @@
+/* Add CSS here */
+body{
+    background: hsl(236, 28%, 20%);
+    color: white;
+}
+.container{
+    width: 80%;
+    max-width: 600px;
+    background-color: hsl(236, 25%, 25%);
+    padding: 1.6em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.settings{
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+}
+.settings button{
+    background: none;
+    border: none;
+    
+}
+.undo{
+    background: white;
+    padding: 0.3em 0.4em;
+    border-radius: 5px;
+    border: none;
+
+}
+.settings p{
+    opacity: 0.8;
+}
+.share{
+    font-size: 1.6rem;
+    width: 40%;
+    /* border: 1px solid ; */
+    line-height: 27px;
+    margin: 1.2rem 0;
+}
+img{
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0.4em;
+}
+.img-names{
+    display: flex;
+    background-color: hsl(236, 28%, 20%);
+    border: 1px solid rgba(255, 255, 255, 0.658);
+    border-radius: 50px;
+    padding: 0.3em;
+    gap: 0.7em;
+}
+.img-names-container{
+    display: flex;
+    gap: 0.5em;
+}
+.img-names-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(236, 25%, 25%);
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    padding: 0 0.7em 0 0.3em;
+    border-radius: 50px;
+}
+
+.checkbox{
+    margin: 1.5em 0 2.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+input[type="checkbox"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: hsl(236, 28%, 20%);
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="checkbox"]::after{
+    font-family: "Font Awesome 6 free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 15px;
+    color: white;
+    display: none;
+}
+input[type="checkbox"]:checked{
+    background-color: hsl(234, 100%, 72%);
+}
+input[type="checkbox"]:checked::after{
+    display: block;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-cancel{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .6em 1.3em;
+    background-color: hsl(236, 28%, 20%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-right: 0.7em;
+    cursor: pointer;
+}
+.btn-feedback{
+    text-decoration: none;
+    color: hsl(234, 100%, 72%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-send{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .6em 1.3em;
+    background-color: hsl(234, 100%, 72%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.new-add{
+    background-color: hsl(236, 25%, 25%);
+    border: none;
+    padding: 0.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+@media (max-width: 500px) {
+    body{
+        font-size: 62.7%;
+    }
+    .share{
+        width: 60%;
+    }
+}
+@media(max-width: 350px) {
+    .button{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
